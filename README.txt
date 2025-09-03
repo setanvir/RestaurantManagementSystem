@@ -1,20 +1,71 @@
+# 🍴 Restaurant Management System
 
-RestaurantManagementSystem.java - Single-file structured project
+--
 
-How to use:
-1. Make sure Java JDK is installed (javac and java on PATH).
-2. Save or copy RestaurantManagementSystem.java to a folder.
-3. Open terminal/command prompt in that folder.
-4. Compile:
+## 🚀 How to Run
+
+1. Install **Java JDK** (make sure `javac` and `java` are available in your system PATH).
+2. Save or copy `RestaurantManagementSystem.java` into a folder.
+3. Open a terminal/command prompt in that folder.
+4. Compile the program:
+
+   ```bash
    javac RestaurantManagementSystem.java
-5. Run:
+   ```
+5. Run the program:
+
+   ```bash
    java RestaurantManagementSystem
+   ```
 
-What it includes:
-- Entities: Customer, MenuItem, Order, OrderItem (all Serializable)
-- Managers: CustomerManager, MenuItemManager, OrderManager (handle CRUD)
-- File Handler: DataStore (saves/loads a Snapshot to rms_data.ser)
-- GUI: MainFrame with three panels (CustomerPanel, MenuItemPanel, OrderPanel)
-- On every add/update/delete the system saves data to 'rms_data.ser'. Data is loaded on start.
+---
 
-If you want a ZIP with build scripts or a precompiled out/ folder, tell me.
+## 📂 Features & Structure
+
+This project is implemented in a **single Java file** but contains a full structured system:
+
+* **Entities**
+
+  * `Customer`, `MenuItem`, `Order`, `OrderItem` (all `Serializable`)
+
+* **Managers (CRUD operations)**
+
+  * `CustomerManager`
+  * `MenuItemManager`
+  * `OrderManager`
+
+* **File Handling**
+
+  * `DataStore` saves/loads snapshots to `rms_data.ser`
+  * Data automatically saves on every add/update/delete
+  * Data loads at startup
+
+* **GUI (Swing-based)**
+
+  * `MainFrame` with three panels:
+
+    * `CustomerPanel`
+    * `MenuItemPanel`
+    * `OrderPanel`
+
+---
+
+## 💾 Persistence
+
+* All data is **saved in `rms_data.ser`** whenever modifications occur.
+* On program startup, the data is **reloaded automatically**, ensuring continuity between sessions.
+
+---
+
+## 🎯 Purpose
+
+This project demonstrates:
+
+* Java OOP principles
+* File serialization & persistence
+* Basic GUI development with Swing
+* Single-file structured design for simplicity
+
+---
+
+
